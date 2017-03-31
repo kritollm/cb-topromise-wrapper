@@ -23,7 +23,7 @@ $ npm install -S cb-topromise-wrapper
 ```
 
 ```javascript
-// var promiseWrapper = require(cb.topromise-wrapper).promiseWrapper;
+// var promiseWrapper = require(cb-topromise-wrapper).promiseWrapper;
 import { promiseWrapper } from 'cb-topromise-wrapper';
 const fs = require('fs');
 
@@ -37,7 +37,7 @@ readFile('JsonData/yourfile.json', 'utf8')
 If you like node style result.
 
 ```javascript
-// var promiseWrapper = require(cb.topromise-wrapper).promiseWrapper;
+// var promiseWrapper = require(cb-topromise-wrapper).promiseWrapper;
 import { promiseWrapper } from 'cb-topromise-wrapper';
 const fs = require('fs');
 
