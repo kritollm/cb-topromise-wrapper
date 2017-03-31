@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 function promiseWrapper(fn) {
     return function () {
         var args = [];
@@ -17,5 +18,4 @@ function promiseWrapper(fn) {
     };
 }
 exports.promiseWrapper = promiseWrapper;
-Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = promiseWrapper;
