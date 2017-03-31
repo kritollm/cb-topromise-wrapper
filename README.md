@@ -53,3 +53,22 @@ readFile('JsonData/yourfile.json', 'utf8')
     .then(result => resultHandler({error: null, result}))
     .catch(error => resultHandler({error, result: null}));
 ```
+
+## Gotcha
+
+If you wants to wrap a method you must replace it or bind it.
+
+If the method is in the prototype and you want's every new instance to have the
+wrapped method you must remember to replace the prototype method.
+
+You can also bind the method to the object.
+
+```javascript
+// var promiseWrapper = require(cb-topromise-wrapper).promiseWrapper;
+import { promiseWrapper } from 'cb-topromise-wrapper';
+import { createBlobService } from 'azure-storage';
+
+const blobService = createBlobService();
+
+const createBlockBlobFromText = promiseWrapper(blobService.createBlockBlobFromText.bind(blobService));
+```
