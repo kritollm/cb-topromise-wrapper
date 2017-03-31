@@ -1,4 +1,4 @@
-# cb-topromise-wrapper - Easily add retry logic to any function returning a Promise.
+# cb-topromise-wrapper - Easily turn a function that takes a callback to instead returning a promise.
 
 ## Reason
 
