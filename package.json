@@ -1,6 +1,6 @@
 {
   "name": "cb-topromise-wrapper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Easily turn a function that takes a callback to instead returning a promise.",
   "main": "index.js",
   "typing": "index.d.ts",
