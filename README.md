@@ -1,12 +1,10 @@
-# cb-topromise-wrapper - Easily turn a function that takes a callback to instead returning a promise.
+# cb-topromise-wrapper
 
-## Reason
-
+## Description
 Easily turn a function that takes a callback to instead returning a promise.
 
 ## Requirements
-
-The callback must be the last parameter and the function must return node style parameters.
+The callback must be the last parameter and have node style parameters.
 ```javascript
 function cb(error, result){
     if(error){
@@ -17,7 +15,6 @@ function cb(error, result){
 }
 ```
 ## Usage
-
 ```bash
 $ npm install -S cb-topromise-wrapper
 ```
@@ -34,7 +31,7 @@ readFile('JsonData/yourfile.json', 'utf8')
 
 ```
 
-If you like node style result.
+## If you like node style result.
 
 ```javascript
 // var promiseWrapper = require(cb-topromise-wrapper).promiseWrapper;
@@ -55,7 +52,6 @@ readFile('JsonData/yourfile.json', 'utf8')
 ```
 
 ## Gotcha
-
 If you wants to wrap a method you must replace it or bind it.
 
 If the method is in the prototype and you want's every new instance to have the
